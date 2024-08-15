@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'chat.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'chatdb',
+        'USER': 'aman15coder',
+        'PASSWORD': 'Aman1515@#',
+        'HOST': 'localhost',  # or the IP address of your PostgreSQL server
+        'PORT': '5432',       # or the port number if it's different
     }
 }
+
 
 
 # Password validation
